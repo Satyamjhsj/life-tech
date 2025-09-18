@@ -1,104 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LifeTech Data Solutions - Advertisement Services</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Tech Data Solutions</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html { scroll-behavior: smooth; }
-  </style>
 </head>
-<body class="bg-gradient-to-br from-purple-100 via-white to-violet-100 text-gray-900 font-sans">
+<body class="bg-gradient-to-br from-purple-700 to-violet-900 text-white font-sans">
 
-  <!-- Header -->
-  <header class="bg-gradient-to-r from-purple-700 to-violet-700 text-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-xl md:text-2xl font-extrabold tracking-wide">LifeTech Data Solutions</h1>
-      
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex">
-        <ul class="flex space-x-6">
-          <li><a href="#home" class="hover:text-yellow-300 transition">Home</a></li>
-          <li><a href="#services" class="hover:text-yellow-300 transition">Services</a></li>
-          <li><a href="#why" class="hover:text-yellow-300 transition">Why Us</a></li>
-          <li><a href="#faq" class="hover:text-yellow-300 transition">FAQ</a></li>
-          <li><a href="#support" class="hover:text-yellow-300 transition">Support</a></li>
-          <li><a href="#policies" class="hover:text-yellow-300 transition">T&C</a></li>
-          <li><a href="#contact" class="hover:text-yellow-300 transition">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- Mobile Menu Button -->
-      <button id="menuBtn" class="md:hidden text-white text-2xl">☰</button>
-    </div>
-
-    <!-- Mobile Nav -->
-    <div id="mobileMenu" class="hidden bg-violet-800 md:hidden">
-      <ul class="flex flex-col space-y-4 py-4 px-6">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-violet-800 shadow-lg">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">Life Tech Data Solutions</h1>
+      <ul class="hidden md:flex gap-6 font-medium">
         <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="#about" class="hover:text-yellow-300">About Us</a></li>
         <li><a href="#services" class="hover:text-yellow-300">Services</a></li>
-        <li><a href="#why" class="hover:text-yellow-300">Why Us</a></li>
+        <li><a href="#privacy" class="hover:text-yellow-300">Privacy Policy</a></li>
+        <li><a href="#refund" class="hover:text-yellow-300">Refund & Cancellation</a></li>
+        <li><a href="#terms" class="hover:text-yellow-300">T&C</a></li>
         <li><a href="#faq" class="hover:text-yellow-300">FAQ</a></li>
         <li><a href="#support" class="hover:text-yellow-300">Support</a></li>
-        <li><a href="#policies" class="hover:text-yellow-300">T&C</a></li>
         <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+      </ul>
+      <button class="md:hidden" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">☰</button>
+    </nav>
+    <div id="mobileMenu" class="hidden md:hidden bg-violet-700 p-4">
+      <ul class="flex flex-col gap-4">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#refund">Refund & Cancellation</a></li>
+        <li><a href="#terms">T&C</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </header>
 
-  <!-- Hero / Home -->
-  <section id="home" class="bg-gradient-to-r from-violet-700 via-purple-600 to-pink-600 text-white text-center py-20 px-4">
-    <h2 class="text-3xl md:text-5xl font-extrabold mb-4 animate-pulse">🚀 Grow Your Business with Smarter Ads</h2>
-    <p class="text-base md:text-lg mb-6">We create powerful ad campaigns across Google Ads and Meta Ads to boost your growth.</p>
-    <a href="#services" class="bg-yellow-400 text-gray-900 px-6 md:px-8 py-3 rounded-full font-bold shadow-lg hover:bg-yellow-300 transition transform hover:scale-105 inline-block">Explore Services</a>
+  <!-- Hero Section -->
+  <section id="home" class="text-center py-20 bg-gradient-to-b from-violet-900 to-purple-700">
+    <h2 class="text-4xl md:text-6xl font-bold">Grow Your Business with Us 🚀</h2>
+    <p class="mt-4 text-lg max-w-2xl mx-auto">Creative, data-driven, and result-oriented services to help your brand stand out.</p>
+    <p class="mt-4 text-lg">Director: ✅ Prabal Pandey</p>
+    <a href="#services" class="mt-6 inline-block bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold hover:bg-yellow-300 transition">Explore Services</a>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="py-16 container mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-6">About Us</h3>
+    <p class="mb-4">Welcome to Life Tech Data Solutions, your one-stop solution for business growth through creative and data-driven services.</p>
+    <p class="mb-4">We specialize in delivering high-quality Advertisement, Data Entry, Animation & Graphics, and Digital Marketing services designed to help businesses stand out.</p>
+    <p class="mb-4">Our mission is to empower businesses with innovative marketing, creative visuals, and precise data solutions that drive measurable results.</p>
+    <p class="mb-4">Our vision is to be a trusted global service provider that helps brands grow through creativity, technology, and reliable support.</p>
   </section>
 
   <!-- Services -->
-  <section id="services" class="container mx-auto px-4 md:px-6 py-16">
-    <h3 class="text-3xl md:text-4xl font-extrabold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-violet-700">Our Services</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-      <div class="bg-gradient-to-br from-purple-50 to-violet-50 shadow-lg rounded-2xl p-6 text-center hover:shadow-2xl transition transform hover:scale-105">
-        <h4 class="font-bold text-lg md:text-xl mb-2 text-violet-700">Google Ads</h4>
-        <p class="text-sm md:text-base">Reach your audience with targeted campaigns on Google Search & Display.</p>
+  <section id="services" class="py-16 bg-violet-800 px-6">
+    <h3 class="text-3xl font-bold text-center mb-10">Our Services</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-violet-700 p-6 rounded-xl shadow hover:scale-105 transition">
+        <h4 class="font-bold text-xl mb-2">Advertisement</h4>
+        <p>Targeted ad campaigns to boost visibility.</p>
       </div>
-      <div class="bg-gradient-to-br from-pink-50 to-purple-50 shadow-lg rounded-2xl p-6 text-center hover:shadow-2xl transition transform hover:scale-105">
-        <h4 class="font-bold text-lg md:text-xl mb-2 text-pink-700">Meta Ads</h4>
-        <p class="text-sm md:text-base">Engage users on Facebook & Instagram with optimized ad strategies.</p>
+      <div class="bg-violet-700 p-6 rounded-xl shadow hover:scale-105 transition">
+        <h4 class="font-bold text-xl mb-2">Data Entry</h4>
+        <p>Accurate and efficient data management services.</p>
       </div>
-      <div class="bg-gradient-to-br from-yellow-50 to-purple-50 shadow-lg rounded-2xl p-6 text-center hover:shadow-2xl transition transform hover:scale-105">
-        <h4 class="font-bold text-lg md:text-xl mb-2 text-purple-700">Campaign Mgmt</h4>
-        <p class="text-sm md:text-base">Complete ad setup, optimization, and monitoring to maximize ROI.</p>
+      <div class="bg-violet-700 p-6 rounded-xl shadow hover:scale-105 transition">
+        <h4 class="font-bold text-xl mb-2">Animation & Graphics</h4>
+        <p>Eye-catching designs and animations for your brand.</p>
       </div>
-      <div class="bg-gradient-to-br from-violet-50 to-indigo-50 shadow-lg rounded-2xl p-6 text-center hover:shadow-2xl transition transform hover:scale-105">
-        <h4 class="font-bold text-lg md:text-xl mb-2 text-indigo-700">Analytics</h4>
-        <p class="text-sm md:text-base">Track performance with transparent reports & actionable insights.</p>
+      <div class="bg-violet-700 p-6 rounded-xl shadow hover:scale-105 transition">
+        <h4 class="font-bold text-xl mb-2">Digital Marketing</h4>
+        <p>SEO, social media, and email campaigns to grow your reach.</p>
       </div>
     </div>
   </section>
 
+  <!-- Privacy Policy -->
+  <section id="privacy" class="py-16 container mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-6">Privacy Policy</h3>
+    <p class="mb-4">We value your privacy and are committed to protecting your personal information. This policy explains how we collect, use, and protect your data.</p>
+    <ul class="list-disc ml-6 space-y-2">
+      <li>We collect personal (name, email, phone, billing) and usage data.</li>
+      <li>We use it to improve services, process payments, and ensure security.</li>
+      <li>We do not sell your data, but may share it with trusted providers or legal authorities if required.</li>
+      <li>You can request to access, update, or delete your information anytime.</li>
+      <li>Our website may use cookies for a better experience.</li>
+    </ul>
+  </section>
+
+  <!-- Refund & Cancellation -->
+  <section id="refund" class="py-16 bg-violet-800 px-6">
+    <h3 class="text-3xl font-bold mb-6">Refund & Cancellation Policy</h3>
+    <h4 class="text-xl font-semibold mb-2">1. Cancellations</h4>
+    <p class="mb-4">Customers may request to cancel their order/service before it is processed or delivered.  
+    For digital services/subscriptions, cancellation requests must be submitted at least 24 hours before the next billing cycle.  
+    Once the service is delivered or activated, cancellation may not be possible.</p>
+
+    <h4 class="text-xl font-semibold mb-2">2. Refunds</h4>
+    <p class="mb-4">Refund requests must be submitted within 24 hours after receiving the service.  
+    Refunds are only applicable if the service has not been used or partially delivered.  
+    Digital products already accessed are not refundable.</p>
+
+    <h4 class="text-xl font-semibold mb-2">3. Non-Refundable Items</h4>
+    <ul class="list-disc ml-6 mb-4">
+      <li>Electronic services already delivered.</li>
+      <li>Subscription fees for the period already used.</li>
+      <li>Processing or convenience fees by third-party gateways.</li>
+    </ul>
+
+    <h4 class="text-xl font-semibold mb-2">4. Refund Process</h4>
+    <p class="mb-4">Once approved, refunds will be credited to the original payment method within 10–15 business days.  
+    In some cases, partial refunds may be issued if only part of the service/product was used.</p>
+  </section>
+
+  <!-- Terms & Conditions -->
+  <section id="terms" class="py-16 container mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-6">Terms & Conditions</h3>
+    <ul class="list-decimal ml-6 space-y-2">
+      <li>I authorize requested services and payment.</li>
+      <li>Services are considered delivered once received.</li>
+      <li>No refunds/disputes after full delivery.</li>
+      <li>I accept these terms before payment.</li>
+    </ul>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 bg-violet-800 px-6">
+    <h3 class="text-3xl font-bold mb-6">FAQ</h3>
+    <p>Q: What services do you provide?<br> A: Advertisement, Data Entry, Animation, Graphics & Digital Marketing.</p>
+    <p class="mt-4">Q: How can I request a refund?<br> A: Within 24 hours of service if unused.</p>
+  </section>
+
+  <!-- Support -->
+  <section id="support" class="py-16 container mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-6">Support</h3>
+    <p>For any issues or support, reach us through email or phone. Our team is available 24/7 to assist you.</p>
+  </section>
+
   <!-- Contact -->
-  <section id="contact" class="bg-gradient-to-r from-purple-700 to-violet-700 py-16 px-4 text-white text-center">
-    <h3 class="text-3xl md:text-4xl font-extrabold mb-6">Contact Us</h3>
-    <p>Email: <a href="mailto:lifetechdatasolutions.com@gmail.com" class="underline">lifetechdatasolutions.com@gmail.com</a></p>
-    <p>Phone: <a href="tel:+15166545370" class="underline">+1 (516) 654-5370</a></p>
+  <section id="contact" class="py-16 bg-violet-800 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6">Contact Us</h3>
+    <p>Email: lifetechdatasolutions.com@gmail.com</p>
+    <p>Phone: +1 (516) 654-5370</p>
     <p>Address: Faizabad, Uttar Pradesh (224001)</p>
-    <p class="mt-6 font-bold">Director: ✅ Prabal Pandey</p>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gradient-to-r from-violet-800 to-purple-800 text-white text-center py-4">
-    <p>&copy; 2025 LifeTech Data Solutions. All Rights Reserved.</p>
+  <footer class="bg-violet-900 py-6 text-center text-sm">
+    © 2025 Life Tech Data Solutions. All Rights Reserved.
   </footer>
-
-  <!-- Mobile Menu Script -->
-  <script>
-    const menuBtn = document.getElementById("menuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  </script>
 
 </body>
 </html>
+
+
